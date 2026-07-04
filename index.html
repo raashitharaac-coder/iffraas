@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Little Surprise for You my Girl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Dancing+Script:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Acme&family=Italiana&family=Josefin+Slab:wght@400;700&family=Caveat+Brush&family=Pirata+One&family=Copse&family=Sangita:wght@400;700&family=Rye&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="intro-overlay" id="introOverlay" aria-live="polite">
+      <div class="intro-glow"></div>
+      <div class="intro-balloons" aria-hidden="true">
+        <span class="intro-balloon intro-balloon-1"></span>
+        <span class="intro-balloon intro-balloon-2"></span>
+        <span class="intro-balloon intro-balloon-3"></span>
+        <span class="intro-balloon intro-balloon-4"></span>
+      </div>
+      <div class="intro-sparkles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="intro-bokeh" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="intro-gift" aria-hidden="true">
+        <div class="gift-box">
+          <span class="gift-ribbon"></span>
+        </div>
+      </div>
+      <div class="intro-message">
+        <p class="intro-kicker">A Special Surprise Is Waiting For You... ❤️🎂</p>
+        <h2>Open it With Smile!</h2>
+        <p class="intro-caption">A warm celebration is opening just for you.</p>
+        <p class="intro-reveal">Something I made with all my feelings </p>
+      </div>
+    </div>
+
+    <div class="overlay" id="securityOverlay">
+      <div class="security-card">
+        <h1>Birthday Surprise</h1>
+        <p>Enter the special dates to unlock your surprise wishes.</p>
+        <form id="securityForm">
+          <label for="firstMeeting">First Meeting Date</label>
+          <input id="firstMeeting" name="firstMeeting" type="text" placeholder="MM/DD/YYYY" required />
+          <label for="lastMeeting">Last Meeting Date</label>
+          <input id="lastMeeting" name="lastMeeting" type="text" placeholder="MM/DD/YYYY" required />
+          <button type="submit">Reveal the Surprise</button>
+          <div class="message" id="securityMessage"></div>
+        </form>
+      </div>
+    </div>
+
+    <div id="confettiContainer"></div>
+
+    <div class="page-container">
+      <div class="balloons" aria-hidden="true">
+        <div class="balloon balloon-1"></div>
+        <div class="balloon balloon-2"></div>
+        <div class="balloon balloon-3"></div>
+        <div class="balloon balloon-4"></div>
+      </div>
+
+      <main id="mainContent" class="hidden">
+        <section class="hero-section fade-up">
+          <div class="hero-copy">
+            <p class="subheading">To The one who will always have a special place in my heart 💜🫂</p>
+            <h1 class="font-philosopher">Happy Birthday My Girl ❤️🎂</h1>
+            <p class="hero-text">
+              Every click tells a story we've lived together.
+               Every memory here carries a piece of my heart.
+                Made with love, just for you❤️🫂
+            </p>
+          </div>
+        </section>
+
+        <section class="timeline-section fade-up">
+          <h2 class="font-dm-serif">Pages From US </h2>
+          <div class="timeline-grid">
+            <article class="timeline-card">
+              <span class="font-acme">First Hi</span>
+              <p>I sent a simple Hi..
+                Not expecting anything.
+                Just a small moment (Donut eh cancel pannelama?)😂
+                But it slowly turned into something special and presious...❤️
+              And it still continues. </p>
+            </article>
+            <article class="timeline-card">
+              <span class="font-acme">First Meet</span>
+              <p>You came in my favourite colour... And quietly got impressed❤️
+                And I quietly got impressed.. I didn't say anything.. i just kept watching in silence😍 </p>
+            </article>
+            <article class="timeline-card">
+              <span class="font-acme">First Fight & missing </span>
+              <p>For a week, there were no calls or messages because of stomach pain… and I was upset enough to even remove the bracelet you gave me.
+After that, you called and shared your PCOD problem… and that’s when I started understanding you a little more. ❤️..🤗</p>
+            </article>
+            <article class="timeline-card">
+              <span class="font-acme">First video call </span>
+              <p>I don't know if you rememebered that day...
+                It was during my first journey to jaffna
+                that we had our first video call...🫣
+                even through we were miles apart, that was the moment
+                we started becoming even closer🥰</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="gallery-section fade-up">
+          <h2 class="font-josefin-slab">A moment in Time</h2>
+          <!-- Background music (hidden) so video can pause/resume it -->
+          <audio id="backgroundMusic" loop preload="metadata" style="display:none">
+            <source src="assets/music/birthday-melody.wav" type="audio/wav" />
+            <!-- fallback text -->
+          </audio>
+
+          <div class="gallery-grid">
+            <article class="gallery-card">
+              <img src="iffath/p1.jpeg" alt="Memory 1 - group photo" />
+              <p>First group photo when we met… We still looked like strangers standing together.</p>
+             
+            </article>
+
+            <article class="gallery-card">
+              <img src="iffath/p2.jpeg" alt="Memory 2 - candid photo" />
+              <p>For the first time, we took a good selfie together and went for a night walk.
+                That moment still feels very special to me, and I still remember it</p>
+              
+            </article>
+
+            <article class="gallery-card">
+              <img src="iffath/p3.jpeg" alt="Memory 3 - warm laughter" />
+              <p>The first time I surprised you by coming to the mosque. 🤣
+I still can't forget that day… your face, your eyes, and your reaction.</p>
+              
+            </article>
+
+            <article class="gallery-card">
+              <img src="iffath/p4.jpeg" alt="Memory 4 - adventure" />
+              <p>Our first outing together.
+Taking photos of all your cute reactions  my favorite thing to do</p>
+              
+            </article>
+
+            <article class="gallery-card">
+              <img src="iffath/p5.jpeg" alt="Memory 5 - magical day" />
+              <p>I'll never forget you in any of my happiest moments ❤️</p>
+              
+            </article>
+
+            <article class="gallery-card">
+              <img src="iffath/p6.jpeg" alt="Memory 6 - discovery" />
+              <p>The first time you met my family.
+You looked like a heavenly ice cream 😘</p>
+              
+            </article>
+
+            <article class="gallery-card">
+              <img src="iffath/p7.jpeg" alt="Memory 7 - soft moments" />
+              <p>The first photo we took on your terrace after we started talking again,
+                261 days after our fight.
+I still can't forget that moment.</p>
+              
+            </article>
+
+            <article class="gallery-card">
+              <img src="iffath/p8.jpeg" alt="Memory 8 - story frames" />
+              <p>A day I never want to experience again 🥺
+Please don't ever give me a day like that again 😭</p>
+              
+            </article>
+
+            
+          </div>
+        </section>
+
+        <section class="quote-section fade-up">
+          <div class="quote-card">
+            <p class="animated-quote font-pirata-one">May this year bring you as much joy as you bring to everyone around you.</p>
+            <p class="quote-subtext font-copse">You are loved, cherished, and celebrated today and always.</p>
+          </div>
+        </section>
+
+        <section class="memory-recreate-section fade-up">
+          <div class="memory-recreate-card">
+            <h3 class="font-italiana">I want to Do it with you!</h3>
+            <ul class="emotional-list">
+              <li class="font-sangita">I want to walk with you on the beach, holding your hand 🌅</li>
+              <li class="font-sangita">On a silent evening, I want to listen to Ilaiyaraaja songs with you🥰 </li>
+              <li class="font-sangita">A bus journey with you 😍❤️</li>
+              <li class="font-sangita">Watching a horror movie with you  ✨ </li>
+              <li class="font-sangita">Just One warm Hug from you🤗</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="final-section fade-up">
+          <article class="final-card">
+            <h2 class="font-rye">Happy Birthday Ami!</h2>
+            <p class="final-message">Thank you for the memories you've made and the ones still waiting to come.</p>
+            <p class="final-signature font-stardos-stencil">Forever unchanging love RaaC</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
